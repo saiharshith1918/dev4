@@ -14,6 +14,7 @@ spec:
     spec:
       containers:
       - name: cicd4-app
-        image: harshith1918/demo:latest
+        image: harshith1918/cicd-demo:latest
         ports:
         - containerPort: 3000
+
