@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cicd4-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: cicd4-app
+  template:
+    metadata:
+      labels:
+        app: cicd4-app
+    spec:
+      containers:
+      - name: cicd4-app
+        image: harshith1918/demo:latest
+        ports:
+        - containerPort: 3000
