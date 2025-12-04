@@ -3,11 +3,12 @@ pipeline {
 
     stages {
 
-        stage('Checkout') {
-            steps {
-                git 'https://github.com/saiharshith1918/dev4.git'
-            }
-        }
+stage('Checkout') {
+    steps {
+        git branch: 'main', url: 'https://github.com/saiharshith1918/dev4.git'
+    }
+}
+
 
         stage('Build Docker Image') {
             steps {
